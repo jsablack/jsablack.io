@@ -154,7 +154,7 @@ p {
 #boxy {
 	width: 864px;
 	height: 164;
-	background: url("");
+	background: url("http://res.cloudinary.com/treborx555/image/upload/v1472066255/texture_xhoaxc.png");
 	border: 10px solid #333;
 	margin-left: 46px;
 	margin-top: 125px;
@@ -299,7 +299,7 @@ table {
 #bosshpbar {
 	width: 100%;
 	height: 40px;
-	background: url("res.cloudinary.com/treborx555/image/upload/v1472309979/red_ukpo3h.jpg");
+	background: url("http://res.cloudinary.com/treborx555/image/upload/v1472309979/red_ukpo3h.jpg");
 	float: left;
 }
 
@@ -334,7 +334,7 @@ table {
 #playermanabar {
 	width: 100%;
 	height: 25px;
-	background: url("res.cloudinary.com/treborx555/image/upload/v1472309979/dblue168_zjpw0l.jpg");
+	background: url("http://res.cloudinary.com/treborx555/image/upload/v1472309979/dblue168_zjpw0l.jpg");
 	background-size: 150px;
 	border: 5px solid #333;
 }
@@ -379,7 +379,7 @@ table {
 }
 
 .spellsprite {
-	background-image: url("");
+	background-image: url("http://res.cloudinary.com/treborx555/image/upload/v1472247353/spritesheet_ne1oxv.png");
 	background-repeat: no-repeat;
 	display: block;
 }
@@ -387,29 +387,29 @@ table {
 .-basic {
 	width: 60px;
 	height: 60px;
-	background-position: ;
+	background-position: 0 0;
 }
 
 .-disease {
 	width: 60px;
 	height: 60px;
-	background-position: ;
+	background-position: -300px 0;
 }
 
 .-heal {
 	width: 60px;
 	height: 60px;
-	background-position: ;
+	background-position: -180px 0; 
 }
 
 .-manarestore {
 width: 60px;
 	height: 60px;
-	background-position: ;
+	background-position: -420px 0;
 }
 
 .statsprite {
-	background: url("");
+	background: url("http://res.cloudinary.com/treborx555/image/upload/v1472414022/spritesheet_9_vyyt5q.png");
 	background-repeat: no-repeat;
 	display: block;
 }
@@ -417,85 +417,85 @@ width: 60px;
 .-health {
 	width: 30px;
     height: 30px;
-    background-position: 0 0;
+    background-position: 0 -60px;
 }
 
 .-mana {
     width: 30px;
     height: 30px;
-    background-position: 0 0;
+    background-position: -90px 0;
 }
 
 .-dodge {
     width: 30px;
     height: 30px;
-    background-position: 0 0;
+    background-position: -30px 0;
 }
 
 .-critical {
     width: 30px;
     height: 30px;
-    background-position: 0 0;
+    background-position: -60px -60px;
 }
 
-.-heal-1 {
+.-heal-2 {
     width: 30px;
     height: 30px;
-    background-position: ;
+    background-position: -30px -90px;
 }
 
 .-pow {
     width: 30px;
     height: 30px;
-    background-position: ;
+    background-position: 0 0;
 }
 
 .-lifesteal {
     width: 30px;
     height: 30px;
-    background-position: ;
+    background-position: 0 -30px;
 }
 
 .-damage {
     width: 30px;
     height: 30px;
-    background-position: ;
+    background-position: -60px 0;
 }
 
 .mobsprites {
-	background-image: url("../../../images/DAGRONS5.png");
+	background-image: url("http://res.cloudinary.com/treborx555/image/upload/v1472288881/spritesheet_7_guocsq.png");
 	background-repeat: no-repeat;
 	display: block;
 }
 
 .boss1 {
-	width: 184px;
-	height: 119px;
-	background-position: -107px -106px;
+	width: 125px;
+	height: 150px;
+	background-position: -125px -150px;
 }
 
 .boss2 {
-	width: ;
-	height: ;
-	background-position: ;
+	width: 125px;
+	height: 150px;
+	background-position: -250px -150px;
 }
 
 .boss3 {
-	width: ;
-	height: ;
-	background-position: ;
+	width: 125px;
+	height: 150px;
+	background-position: 0 -300px;
 }
 
 .boss4 {
-	width: ;
-	height: ;
-	background-position: ;
+	width: 125px;
+	height: 150px;
+	background-position: -125px -300px;
 }
 
 .boss5 {
-	width: ;
-	height: ;
-	background-position: ;
+	width: 125px;
+	height: 150px;
+	background-position: -250px -300px;
 }
 
 @media screen and (max-width: 1360px) {

@@ -50,6 +50,8 @@ var boss = {
 
 var playerdamage = false;
 
+var clickeditemid = "";
+
 var mouseX;
 var mouseY;
 $(document).mousemove(function(e) {
@@ -135,7 +137,7 @@ var spellobject;
 
 function updatespells() {
 
-	spellObject = {
+	spellobject = {
 
 		basicattack: {
 			nameplayer: "Attack",
@@ -146,7 +148,7 @@ function updatespells() {
 			healthcost: 0,
 			manarestore: Math.floor(Mana/10),
 			healthrestore: Math.floor(Lifesteal/4),
-			repeat: 0;
+			repeat: 0,
 			delay: 0,
 			cooldown: 1000,
 		},
@@ -237,7 +239,7 @@ function displaystats() {
 	$("#pow").text(Math.floor(Pow));
 	$("#lifesteal").text(Math.floor(Lifesteal));
 
-	$("#level").text(Math.floor("Level: "+player.level);
+	$("#level").text(Math.floor("Level: "+player.level));
 }
 
 function countplayerstats() {
@@ -319,8 +321,8 @@ function startfight(){
 
 	$(".oncooldown").removeClass("oncooldown");
 
-	resetplayerstats();
-	var randombossname= Math.floor(Math.random()*13)+1;
+	// resetplayerstats();
+	var randombossname= Math.floor(Math.random()*5)+1;
 	var bossname = "boss"+randombossname+" "+" mobsprites bosspic";
 	var bosshitroll;
 
@@ -348,7 +350,7 @@ function startfight(){
 
 		$("#bosshpbar").animate({width: barpercent+"%"}, "slow");
 		$("#bosshptext").text(currentbosshealth + "/"+boss.health);
-		$("#playerhpbar").animate({width: playerhpbar+"%"} "slow");
+		$("#playerhpbar").animate({width: playerhpbar+"%"}, "slow");
 		$("#playermanabar").animate({width: playermanabar+"%"}, "slow");
 	}
 
@@ -474,16 +476,14 @@ $("#fightbutton").click(function(){
 	startfightonclick();
 });
 
-function autoitems(){
-	createitem(player.bosslevel);
-}
+// function autoitems(){
+// 	createitem(player.bosslevel);
+// }
 
 setInterval(checkexp, 20000);
 setInterval(countplayerstats, 300);
 
-window.onload = function() {
-	load();
-}
+})
 
 
 
