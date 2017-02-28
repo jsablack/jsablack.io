@@ -147,7 +147,7 @@ function updatespells() {
 			manacost: 0,
 			healthcost: 0,
 			manarestore: Math.floor(Mana/10),
-			healthrestore: Math.floor(Lifesteal/4),
+			healthrestore: Math.floor(Lifesteal/2),
 			repeat: 0,
 			delay: 0,
 			cooldown: 1000,
@@ -239,7 +239,7 @@ function displaystats() {
 	$("#pow").text(Math.floor(Pow));
 	$("#lifesteal").text(Math.floor(Lifesteal));
 
-	$("#level").text(Math.floor("Level: "+player.level));
+	$("#level").text("Level: "+player.level);
 }
 
 function countplayerstats() {
@@ -255,10 +255,10 @@ function countplayerstats() {
 	Health = 200*player.level + player.totalHealth;
 	Mana = 150*player.level + player.totalMana;
 	Dodge = 5*player.level + player.totalDodge;
-	Pow = 10*player.level + player.totalPow;
+	Pow = 20*player.level + player.totalPow;
 	Damage = 10*player.level + player.totalDamage;
 	Critical = 1 + player.totalCritical;
-	Heal = 5*player.level + player.totalHeal;
+	Heal = 15*player.level + player.totalHeal;
 	Lifesteal = 15*player.level + player.totalLifesteal;
 
 	if (Dodge<0){Dodge=0;}
@@ -294,7 +294,7 @@ function addsummon(){
 function checkexp(){
 
 	if(player.experience > 3 * player.level){
-		player.experience=0;
+		player.experience=4;
 		player.level++;
 	}
 
@@ -327,7 +327,7 @@ function startfight(){
 	var bosshitroll;
 
 	boss.health = boss.level * 500;
-	boss.damage = bosslevel.level*20;
+	boss.damage = boss.level*20;
 
 		currentbosshealth = boss.health;
 		currentplayerhealth = Health;
@@ -394,7 +394,7 @@ function startfight(){
 			clearInterval(bossattack);
 			clearInterval(checkdeath);
 			currentbosshealth=boss.health;
-			resetplayerstats();
+			// resetplayerstats();
 			countplayerstats();
 			currentplayerhealth = Health;
 			currentplayermana = Mana;
@@ -408,7 +408,7 @@ function startfight(){
 			battle=false;
 			clearInterval(bossattack);
 			clearInterval(checkdeath);
-			resetplayerstats();
+			// resetplayerstats();
 			countplayerstats();
 			currentplayerhealth = Health;
 			currentplayermana = Mana;
@@ -480,7 +480,7 @@ $("#fightbutton").click(function(){
 // 	createitem(player.bosslevel);
 // }
 
-setInterval(checkexp, 20000);
+// setInterval(checkexp, 20000);
 setInterval(countplayerstats, 300);
 
 })
