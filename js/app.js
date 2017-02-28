@@ -235,7 +235,7 @@ function displaystats() {
 	$("#damage").text(Math.floor(Damage));
 	$("#critical").text(Math.floor(Critical));
 	$("#dodge").text(Math.floor(Dodge));
-	$("#heal").text(Math.floor(Heal));
+	$("#heal-2").text(Math.floor(Heal));
 	$("#pow").text(Math.floor(Pow));
 	$("#lifesteal").text(Math.floor(Lifesteal));
 

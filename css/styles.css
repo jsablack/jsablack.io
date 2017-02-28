@@ -74,8 +74,8 @@ html {
 
 #playerstats {
 	padding: 5px;
-	width: 222px;
-	height: 222px;
+	width: 360px;
+	height: 140px;
 	background-color: #24303E;
 	border: 0px solid #333;
 }
@@ -90,7 +90,7 @@ html {
 	padding-right: 5px;
 }
 
-#health, #mana, #heal, #pow {
+#health, #mana, #heal-2, #pow {
 	float: left;
 	padding-left: 5px;
 }
@@ -169,7 +169,7 @@ p {
 
 #screen {
 	width: 865px;
-	height: 300px;
+	height: 325px;
 	background-color: #24303E;
 	border: 10px solid #333;
 	position: block;
@@ -234,7 +234,7 @@ p {
 	border-right: 10px solid #333;
 	top: 330px;
 	width: 865px;
-	margin-left: 126px;
+	margin-left: 264px;
 	height: 120px;
 	position: absolute;
 }
@@ -319,7 +319,7 @@ table {
 
 #totalplayermanabar {
 	width: 845px;
-	height: 25px;
+	height: 35px;
 	background-color: black;
 }
 
@@ -334,10 +334,10 @@ table {
 
 #playermanabar {
 	width: 100%;
-	height: 25px;
+	height: 35px;
 	background: url("http://res.cloudinary.com/treborx555/image/upload/v1472309979/dblue168_zjpw0l.jpg");
 	background-size: 150px;
-	border: 5px solid #333;
+	/*border: 5px solid #333;*/
 	top:0;
 }
 
