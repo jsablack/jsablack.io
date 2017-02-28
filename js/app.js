@@ -90,12 +90,12 @@ function f() {
 				var ifcrit = " does ";
 
 					if(critroll < Critical) {
-						object.damage = object.damage * 2;
+						object.damage = object.damage * 4;
 						ifcrit = " CRITS for";
 					}
 			currentbosshealth = currentbosshealth - object.damage;
 			if (object.namefunction != "basicattack") {
-				$("rightinfo").prepend("<p>"+ object.nameplayer + ifcrit + ": " + object.damage + " DMG </p>");
+				$("#rightinfo").prepend("<p>"+ object.nameplayer + ifcrit + ": " + object.damage + " DMG </p>");
 			}
 			}
 		if(object.spellfunction != undefined) {
@@ -110,7 +110,7 @@ function f() {
 		if (object.manarestore > 0) {
 			currentplayermana = currentplayermana + object.manarestore;
 			if (object.namefunction != "basicattack"){
-				$("rightinfo").prepend("<p>You restore: " + object.manarestore + " Mana")
+				$("#rightinfo").prepend("<p>You restore: " + object.manarestore + " Mana")
 			}
 		}
 
@@ -174,7 +174,7 @@ function updatespells() {
 			manacost: boss.level * 4,
 			healthcost: 0,
 			manarestore: 0,
-			healthrestore: Heal*5,
+			healthrestore: Math.floor(Heal*5),
 			repeat: 0,
 			delay: 0,
 			cooldown: 6000,
